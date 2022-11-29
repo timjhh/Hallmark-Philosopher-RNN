@@ -18,8 +18,8 @@ from keras.callbacks import TensorBoard
 %load_ext tensorboard
 
 
-response = rq.get("http://www.dailyscript.com/scripts/pulp_fiction.html")
-text = BeautifulSoup(response.content, "html.parser").getText()
+file = open("nietzche.txt")
+text = file.read()
 print(text[:3000])
 
 
