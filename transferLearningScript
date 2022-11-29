@@ -125,3 +125,16 @@ diversity = [0.5]
 
 print_callback = LambdaCallback(on_epoch_end=on_epoch_end)
 
+
+
+
+## Transfer learning code
+
+flat1 = Flatten()(model3.layers[-1].output)
+output = Dense(1, activation='sigmoid')(flat1)
+
+model4 = keras.Model(inputs=model3.inputs, outputs=output)
+
+for i in range(len(model4.layers)-1):
+    layer = model4.layers[i]
+    layer.trainable = False
