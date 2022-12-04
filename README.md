@@ -2,9 +2,9 @@
 
 - [Data](#abstract)
 - [Methods](#examples)
+  * [Data Combination](#data-combination)
   * [Vertical Learning](#vertical-learning)
   * [Horizontal Learning](#horizontal-learning)
-  * [Data Combination](#data-combination)
 - [Sources](#sources)
 
 ![NietMark](/images/nietmark.png)
@@ -14,6 +14,54 @@ One thing we are for sure tired of is seeing the same Hallmark movie over and ov
 # Data
 
 There are two main data sets used in this experiment: a movie text style script from Rick Garman, a writer and frequent Hallmark collaborator and raw text files from philosophers Neitzsche and Plato.
+
+# Data Combination
+
+![Combined Data](/images/combined.png)
+
+### Combined text file
+With this method, both data files were spliced together so each line comes from an alternating source. To keep the data equal, the combination was stopped after the last line in the screenplay(shorter data) was reached.
+
+```
+helter-skelter, like a torrent that will and lathers, Ind's should be not be attell he personalion and play and demsinally
+CONNER
+omating eternal stop it. *
+
+LEIGH *
+The German,_ conquent relar alogation
+(LEIggg)
+
+CONNER
+is a sign of the procuse of the world appears of self he had us. *
+
+CONNER
+The Pessimism is not political property and a comenning. *
+belief in the forcow. In propers of the word to show by music who presents.
+
+ERIN
+130
+
+helter-skelter, like a torrent that will this of _humanity_ and life, but whose oright and
+On the wearthomed
+What you don’t know’s dogmants and from the table the religious first second to paper who
+ALLISON
+animal _from the
+Holy spirityed _absence_ for the everything?
+animal fild happeners as the flacking intellectuar revolly mean hersto not it is the menss from be same into _trence there socies._
+Thank you...
+resplitering the time who would leave, who a (beat). The digned to be in its breath without and improveded by the _greaty_ in order of the presence of the fortions and weakness, and who are from the same
+Erin’s apartment _trends into
+ALLISON
+conformination of us miditare wanterm scring characters. The fact a looks or an ablention, and its belong the lowior of courage what _strong "heart_ for the distour pich people to despirrity on same the oppresshing shakes us, there sellishness in the presence of the talking
+problem natures the its the obgeratua it bitwence is
+BRAD
+who wearrabbilite who are over--a sensurare her posithing in a force 
+
+```
+
+### Stacked text file
+In this step, I simply put the same length of hallmark movie script text and Nietzsche’s text together (103613 characters of each) to be used for Vertical Learning.
+
 
 # Vertical Learning
 
@@ -183,58 +231,12 @@ two higher and yet carede, and soul is here that is the pe
 
 ```
 
-
-
-# Data Combination
-
-![Combined Data](/images/combined.png)
-
-### Combined text file
-With this method, both data files were spliced together so each line comes from an alternating source. To keep the data equal, the combination was stopped after the last line in the screenplay(shorter data) was reached.
-
-```
-helter-skelter, like a torrent that will and lathers, Ind's should be not be attell he personalion and play and demsinally
-CONNER
-omating eternal stop it. *
-
-LEIGH *
-The German,_ conquent relar alogation
-(LEIggg)
-
-CONNER
-is a sign of the procuse of the world appears of self he had us. *
-
-CONNER
-The Pessimism is not political property and a comenning. *
-belief in the forcow. In propers of the word to show by music who presents.
-
-ERIN
-130
-
-helter-skelter, like a torrent that will this of _humanity_ and life, but whose oright and
-On the wearthomed
-What you don’t know’s dogmants and from the table the religious first second to paper who
-ALLISON
-animal _from the
-Holy spirityed _absence_ for the everything?
-animal fild happeners as the flacking intellectuar revolly mean hersto not it is the menss from be same into _trence there socies._
-Thank you...
-resplitering the time who would leave, who a (beat). The digned to be in its breath without and improveded by the _greaty_ in order of the presence of the fortions and weakness, and who are from the same
-Erin’s apartment _trends into
-ALLISON
-conformination of us miditare wanterm scring characters. The fact a looks or an ablention, and its belong the lowior of courage what _strong "heart_ for the distour pich people to despirrity on same the oppresshing shakes us, there sellishness in the presence of the talking
-problem natures the its the obgeratua it bitwence is
-BRAD
-who wearrabbilite who are over--a sensurare her posithing in a force 
-
-```
-
-### Stacked text file
-In this step, I simply put the same length of hallmark movie script text and Nietzsche’s text together (103613 characters of each).
-
 # Sources
 
 Nietzsche, Friedrich. The Birth of Tragedy. Oxford University Press, 2008.
 
+Data: https://www.kaggle.com/datasets/christopherlemke/philosophical-texts?select=nietzsche.txt
+
 Garman Rick, and Jennifer Notas. The Bad Date Chronicles: The Complete Screenplay. Bad Date Productions, 2016.
 
+Data: https://rickgarman.com/projects/tv-movies/bad-date-chronicles/ 
